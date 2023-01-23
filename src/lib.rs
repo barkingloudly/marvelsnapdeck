@@ -164,7 +164,7 @@ impl DeckList {
     pub fn from_code<T: AsRef<[u8]>>(code: T) -> Result<Self, DeckListError> {
         let value = general_purpose::STANDARD_NO_PAD
             .decode(code)
-            .map_err(|err| DeckListError::DecodingError(err))?;
+            .map_err(DeckListError::DecodingError)?;
 
         let json: DeckList = serde_json::from_slice(value.as_slice())
             .map_err(|_| DeckListError::InvalidDeckInput)?;
