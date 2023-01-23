@@ -23,11 +23,20 @@ jobs:
           toolchain: stable
           components: rustfmt, clippy
 
-      - name: Clippy Check
-        uses: actions-rs/clippy-check@v1
+      - uses: LoliGothick/rustfmt-check@v0.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          args: --all-features
+          flags: --all
+
+      # - uses: actions-rs/audit-check@v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Clippy Check
+      #   uses: actions-rs/clippy-check@v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     args: --all-features
 
       - name: Cargo Check
         uses: actions-rs/cargo@v1
