@@ -1,12 +1,12 @@
 [package]
 name = "marvelsnapdeck"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["barkingloudly"]
 license = "MIT"
 repository = "https://github.com/barkingloudly/marvelsnapdeck.git"
 homepage = "https://github.com/barkingloudly/marvelsnapdeck"
-description = "Oauth2 for Twitch endpoints"
+description = "Encode and decode Marvel Snap decks"
 documentation = "https://docs.rs/marvelsnapdeck/0.1.0"
 readme = "README.md"
 keywords = ["marvel", "snap", "deck"]
