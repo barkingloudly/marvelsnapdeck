@@ -1,0 +1,21 @@
+[package]
+name = "marvelsnapdeck"
+version = "0.1.0"
+edition = "2021"
+authors = ["barkingloudly"]
+license = "MIT"
+repository = "https://github.com/barkingloudly/marvelsnapdeck.git"
+homepage = "https://github.com/barkingloudly/marvelsnapdeck"
+description = "Oauth2 for Twitch endpoints"
+documentation = "https://docs.rs/marvelsnapdeck/0.1.0"
+readme = "README.md"
+keywords = ["marvel", "snap", "deck"]
+categories = ["games"]
+include = ["src/*", "./Cargo.toml", "./README.md", "LICENSE*"]
+
+[dependencies]
+base64 = "0"
+serde = { version = "1", features = ["derive"] }
+serde_derive = "1"
+serde_json = "1"
+thiserror = "1"
